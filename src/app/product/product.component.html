@@ -1,0 +1,29 @@
+<p>product list</p>
+
+<table border="1" align="center" height="80%" width="800px">
+    <tr>
+        <td> Id </td>
+        <td>titre</td>
+        <td>prix</td>
+        <td>quantite</td>
+        <td>aime</td>
+        <td>action
+        </td>
+    </tr>
+    <tr *ngFor="let l of listProdcut ; let i=index">
+        <td>{{l.id}}</td>
+        <td>{{l.titre}}</td>
+        <td>{{l.prix}}</td>
+        <td>{{l.quantite}}</td>
+        <td>{{l.aime}}</td>
+        <td><a [routerLink]="['/add']" class="btn btn-primary" >show</a></td>
+      
+
+       
+       
+    </tr>
+</table>
+
+<br>
+<br>
+<br>
